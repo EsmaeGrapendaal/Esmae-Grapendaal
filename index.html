@@ -4,93 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/EG-Favicon.svg">
+    <link rel="icon" type="image/svg" href="/images/branding/EG-Favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xyi4lka.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Home - Esmae Grapendaal</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <section class="container">
+            <nav class="header-nav">
                 <a href="/">
-                    <img width="192" height="auto" src="images/EsmaeGrapendaal-Logo.svg" class="header-logo" alt="Esmae Grapendaal"></a>
-                <li><a href="index.html" class="menu-title-text">Home</a></li>
-                <li><a href="portfolio.html" class="menu-title-text">Portfolio</a></li>
-                <li><a href="over-mij.html" class="menu-title-text">Over mij</a></li>
-                <li class="behance-button"><a href="https://www.behance.net/esmaegrapendaal/" class="header-social-icon" target="_blank"><i aria-hidden="true" class="fab fa-behance"></i></a></li>
-                <li class="linkedin-button"><a href="https://www.linkedin.com/in/esmaegrapendaal/" class="header-social-icon" target="_blank"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
-                <li class="contact-button"><i aria-hidden="true" class="far fa-comment-dots"></i><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                    <img width="192" src="images/branding/EsmaeGrapendaal-Logo.svg" class="header-logo" alt="Esmae Grapendaal">
+                </a>
+                <ul>
+                    <li class="menu-links">
+                        <a href="index.html" class="menu-title-text">Home</a>
+                        <a href="portfolio.html" class="menu-title-text">Portfolio</a>
+                        <a href="over-mij.html" class="menu-title-text">Over mij</a>
+                    </li>
+                    <li class="social-media-buttons">
+                        <a href="https://www.linkedin.com/in/esmaegrapendaal/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/esmaegrapendaal/" target="_blank"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li class="contact-button">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
 <main>
     <section class="home-hero">
-        <span>Esmae Grapendaal</span>
-        <h1>Grafisch Ontwerper & Web Developer</h1><br>
-        <a href="contact.html">Contact</a>
+        <section class="container">
+            <span class="subtitel-hero">Esmae Grapendaal</span>
+            <h1>Grafisch Ontwerper<br>& Web Developer</h1>
+            <section class="social-media-buttons">
+                <a href="contact.html" class="button-1">Neem contact op</a>
+                <a href="https://www.linkedin.com/in/esmaegrapendaal/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/esmaegrapendaal/" target="_blank"><i class="fab fa-behance"></i></a>
+            </section>
+        </section>
     </section>
-    <section>
-        <img src="images/Esmae.jpg" alt="Esmae Grapendaal" width="500">
-        <h2>Over mij</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <section class="over-mij">
+        <section class="container">
+            <section class="col-50">
+                <img src="images/branding/Esmae.jpg" alt="Esmae Grapendaal" class="over-mij-afb">
+            </section>
+            <section class="col-50">
+                <h2>Over mij</h2>
+                <p>Hallo, mijn naam is Esmae Grapendaal. Wil je een website of bijvoorbeeld een logo of poster laten maken en ben je op zoek naar de beste kwaliteit, service en een mooi eindresultaat? Met mijn werk en ervaring op het gebied van webdesign en grafisch ontwerpen, combineer ik de kennis en ervaring met de laatste trends en ontwikkelingen om jou te helpen. Neem gerust contact met mij op, om de mogelijkheden te bespreken.</p>
+                <a href="contact.html" class="button-1">Neem contact op</a>
+            </section>
+        </section>
+    </section>    
+    <section class="home-banner">
+        <section class="banner-background-overlay"></section>
+        <section class="home-banner-title">
+            <h3>Creativiteit in Web & Design!</h3>
+        </section>
     </section>
-    <section>
-        <h3>Creativiteit in Web & Design!</h3>
+    <section class="mijn-werkwijze">
+        <section class="container">
+            <h2>Mijn werkwijze</h2>
+            <section class="mijn-werkwijze-articles">
+                <article class="col-33">
+                    <i aria-hidden="true" class="fas fa-medal"></i>
+                    <h3>De beste kwaliteit</h3>
+                    <p>Te werk met de beste kwaliteit die jij verdient</p>
+                </article>
+                <article class="col-33">
+                    <i aria-hidden="true" class="fas fa-comments"></i>
+                    <h3>Enthousiaste samenwerking</h3>
+                    <p>Samen gaan wij enthousiast te werk</p>
+                </article>
+                <article class="col-33">
+                    <i aria-hidden="true" class="fas fa-eye"></i>
+                    <h3>Oog voor detail</h3>
+                    <p>Met een oog voor detail krijg je het optimale eindresultaat</p>
+                </article>
+            </section>
+        </section>
     </section>
-    <section>
-        <h2>Mijn werkwijze</h2>
-        <h3>De beste kwaliteit</h3>
-        <p>Te werk met de beste kwaliteit die jij verdient</p>
-        <h3>Enthousiaste samenwerking</h3>
-        <p>Samen gaan wij enthousiast te werk</p>
-        <h3>Oog voor detail</h3>
-        <p>Met een oog voor detail krijg je het optimale eindresultaat</p>
+    <section class="cases-info">
+        <section class="container">
+            <h2>Ontdek mijn unieke cases</h2>
+            <p>De afgelopen jaren heb ik gewerkt aan mooie projecten voor verschillende klanten, van development tot design. Neem een kijkje!</p>
+        </section>
     </section>
-    <section>
-        <h2>Mijn werkwijze</h2>
-        <h3>De beste kwaliteit</h3>
-        <p>Te werk met de beste kwaliteit die jij verdient</p>
-        <h3>Enthousiaste samenwerking</h3>
-        <p>Samen gaan wij enthousiast te werk</p>
-        <h3>Oog voor detail</h3>
-        <p>Met een oog voor detail krijg je het optimale eindresultaat</p>
-    </section>
-    <section>
-        <h2>Ontdek mijn unieke cases</h2>
-        <p>De afgelopen jaren heb ik gewerkt aan mooie projecten voor verschillende klanten, van development tot design. Neem een kijkje!</p>
-        <article>
-            <h3>Project 1</h3>
-        </article>
-        <article>
-            <h3>Project 2</h3>
-        </article>
-        <article>
-            <h3>Project 3</h3>
-        </article>
-        <article>
-            <h3>Project 4</h3>
-        </article>
-        <article>
-            <h3>Project 5</h3>
-        </article>
-        <article>
-            <h3>Project 6</h3>
-        </article>
-        <a href="portfolio.html">Meer projecten</a>
+    <section class="cases">
+        <section class="container">
+            <section class="cases-articles">
+                <article class="col-33">
+                    <section class="cases-preview-image">
+                        <section class="cases-background-overlay"></section>
+                        <img src="images/cases/WO-Lease-Cases1.png" alt="WO Lease" class="cases-afb">
+                    </section>
+                    <section class="case-title-button">
+                        <h3 class="cases-title">
+                            <a href="project-voorbeeld.html">WO Lease</a>
+                        </h3>
+                        <a href="project-voorbeeld.html" class="button-1">Bekijk case</a>
+                    </section>
+                </article>
+                <article class="col-33">
+                    <section class="cases-preview-image">
+                        <section class="cases-background-overlay"></section>
+                        <img src="images/cases/Flexpedia-Tarieven-Uitzenden-Visuals.png" alt="Flexpedia" class="cases-afb">
+                    </section>
+                    <section class="case-title-button">
+                        <h3 class="cases-title">
+                            <a href="project-voorbeeld.html">Flexpedia</a>
+                        </h3>
+                        <a href="project-voorbeeld.html" class="button-1">Bekijk case</a>
+                    </section>
+                </article>
+                <article class="col-33">
+                    <section class="cases-preview-image">
+                        <section class="cases-background-overlay"></section>
+                        <img src="images/cases/Primos-Padel-Home.png" alt="Primos Padel" class="cases-afb">
+                    </section>
+                    <section class="case-title-button">
+                        <h3 class="cases-title">
+                            <a href="project-voorbeeld.html">Primos Padel</a>
+                        </h3>
+                        <a href="project-voorbeeld.html" class="button-1">Bekijk case</a>
+                    </section>
+                </article>
+            </section>
+            <section class="cases-articles">
+                <article class="col-33">
+                    <section class="cases-preview-image">
+                        <section class="cases-background-overlay"></section>
+                        <img src="images/cases/A3_Poster-Geflipt-Invites_2022.jpg" alt="Geflipt" class="cases-afb">
+                    </section>
+                    <section class="case-title-button">
+                        <h3 class="cases-title">
+                            <a href="project-voorbeeld.html">Geflipt</a>
+                        </h3>
+                        <a href="project-voorbeeld.html" class="button-1">Bekijk case</a>
+                    </section>
+                </article>
+                <article class="col-33">
+                    <section class="cases-preview-image">
+                        <section class="cases-background-overlay"></section>
+                        <img src="images/cases/website-mijnrijlespakket.jpg" alt="Mijnrijlespakket" class="cases-afb">
+                    </section>
+                    <section class="case-title-button">
+                        <h3 class="cases-title">
+                            <a href="project-voorbeeld.html">Mijnrijlespakket</a>
+                        </h3>
+                        <a href="project-voorbeeld.html" class="button-1">Bekijk case</a>
+                    </section>
+                </article>
+                <article class="col-33">
+                    <section class="cases-preview-image">
+                        <section class="cases-background-overlay"></section>
+                        <img src="images/cases/website-primossports.jpg" alt="Primos Sports" class="cases-afb">
+                    </section>
+                    <section class="case-title-button">
+                        <h3 class="cases-title">
+                            <a href="project-voorbeeld.html">Primos Sports</a>
+                        </h3>
+                        <a href="project-voorbeeld.html" class="button-1">Bekijk case</a>
+                    </section>
+                </article>
+            </section>
+            <section class="cases-button">
+                <a href="portfolio.html" class="button-2">Meer projecten</a>
+            </section>
+        </section>
     </section>
 </main>
 <footer>
-    <h3>Meer informatie of vragen?<br>Neem contact op met mij!</h3>
-    <h4>Social Media</h4>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/esmaegrapendaal/">/EsmaeGrapendaal</a></li>
-        <li><a href="https://www.behance.net/esmaegrapendaal">/EsmaeGrapendaal</a></li>
-        <li>Coming Soon!</li>
-        <li>Coming Soon!</li>
-    </ul>
-    <p>Copyright © 2023 Esmae Grapendaal | Alle rechten voorbehouden</p>
+    <section class="footer-info">
+        <section class="footer-background-overlay"></section>
+        <section class= "container">
+            <section class="col-75">
+                <h2>Meer informatie of vragen?<br>Neem contact op met mij!</h2>
+                <a href="contact.html" class="contact-button">Contact</a>
+            </section>
+            <section class="col-25">
+                <h4>Social Media</h4>
+                <ul class="footer-social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/esmaegrapendaal/">
+                            <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                            <p class="icon-list-tekst">/EsmaeGrapendaal</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/esmaegrapendaal/">
+                            <i aria-hidden="true" class="fab fa-behance"></i>
+                            <p class="icon-list-tekst">/EsmaeGrapendaal</p>
+                        </a>
+                    </li>
+                    <li class="social-coming-soon">
+                        <i aria-hidden="true" class="fab fa-instagram"></i>
+                        <p>Coming Soon!</p>
+                    </li>
+                    <li class="social-coming-soon">
+                        <i aria-hidden="true" class="far fa-envelope"></i>
+                        <p>Coming Soon!</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <section class="copyright">
+        <section class= "container">
+            <p>Copyright © 2023 Esmae Grapendaal | Alle rechten voorbehouden</p>
+        </section>
+    </section>
 </footer>
 </body>
 </html>
