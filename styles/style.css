@@ -93,6 +93,11 @@ a.button-1 {
     background-color: #4895ef;
     padding: 15px 30px 15px 30px;
     border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.button-1:hover {
+    background-color: #3288ed;
 }
 
 .button-1:after {
@@ -116,12 +121,13 @@ a.button-2 {
     background-image: linear-gradient(145deg, #670ab3 0%, #4895ef 100%);
     padding: 15px 30px 15px 30px;
     border-radius: 100px;
-    transition: 0.3s;
+    transition: all .3s ease;
+    transition-property: transform;
 }
 
 .button-2:hover {
     background-image: linear-gradient(145deg, #4895ef 0%, #670ab3 100%);
-    transition-duration: 0.3s;
+    transform: scale(1.1);
 }
 
 .button-2:after {
@@ -169,6 +175,15 @@ a.menu-title-text {
     font-weight: 700;
     text-transform: uppercase;
     color: #2F2F2F;
+    transition: all .3s ease;
+}
+
+a.menu-title-text#current {
+    color: #670ab3;
+}
+
+a.menu-title-text:hover {
+    color: #4895ef;
 }
 
 a.menu-title-text:nth-child(2) {
@@ -194,6 +209,17 @@ header .social-media-buttons {
     border-radius: 100%;
     width: calc(25px + 2 * 0.5em);
     height: calc(25px + 2 * 0.5em);
+    transition: all .3s ease;
+    transition-property: transform;
+}
+
+.social-media-buttons i:hover {
+    transform: scale(1.1);
+}
+
+.social-media-buttons i::before:hover {
+    opacity: .9;
+    color: white;
 }
 
 .social-media-buttons i.fab.fa-linkedin-in {
@@ -206,6 +232,10 @@ a.contact-button, .contact-button a {
     display: inline-flex;
 }
 
+.contact-button:hover {
+    background-color: #3288ed;
+}
+
 .contact-button {
     font-size: 20px;
     font-weight: 700;
@@ -214,6 +244,7 @@ a.contact-button, .contact-button a {
     padding: 15px 30px 15px 30px;
     border-radius: 100px;
     margin-left: 10px;
+    transition: all .3s ease;
 }
 
 .contact-button:before {
@@ -266,21 +297,21 @@ a.contact-button, .contact-button a {
     display: flex;
 }
 
-.col-75 {
-    flex-basis: calc(75%);
+.col-80 {
+    flex-basis: calc(80%);
 }
 
-.col-25 {
-    flex-basis: calc(25%);
+.col-20 {
+    flex-basis: calc(20%);
 }
 
-.col-25 h4 {
+.col-80 a.contact-button {
+    margin: 0;
+}
+
+.col-20 h4 {
     color: white;
     margin-bottom: 10px;
-}
-
-.col-25 a.contact-button {
-    margin: 0;
 }
 
 .footer-social-links a {
@@ -374,7 +405,7 @@ li.social-coming-soon p {
 
 /* Home - Over mij */
 .over-mij {
-    padding: 100px 20px 100px 20px;
+    padding: 100px 20px;
     background-color: white;
 }
 
@@ -407,6 +438,7 @@ img.over-mij-afb {
     background-repeat: repeat;
     background-size: 50% auto;
     opacity: .1;
+    pointer-events: none;
 }
 
 .home-banner .banner-background-overlay {
@@ -415,6 +447,7 @@ img.over-mij-afb {
     left: 0;
     width: 100%;
     height: 100%;
+    pointer-events: none;
 }
 
 .home-banner h3 {
@@ -436,6 +469,15 @@ img.over-mij-afb {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.mijn-werkwijze-articles i {
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+.mijn-werkwijze-articles i:hover {
+    transform: scale(1.1) rotate(4deg);
 }
 
 .mijn-werkwijze h2 {
@@ -534,12 +576,11 @@ img.cases-afb {
 .cases-preview-image > .cases-background-overlay {
     background-image: linear-gradient(180deg, transparent 0%, #2F2F2F 100%);
     opacity: 0.4;
-    transition: 0.3s;
+    transition: all .3s ease;
 }
 
 .cases-preview-image > .cases-background-overlay:hover {
     opacity: 0;
-    transition: 0.3s;
 }
 
 .cases-preview-image .cases-background-overlay {
@@ -555,4 +596,279 @@ img.cases-afb {
     justify-content: center;
     margin-top: 30px;
     padding-bottom: 100px;
+}
+
+/*  Pagina heros */
+.pagina-heros {
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px 0px 20px;
+    background-image: linear-gradient(145deg, #670ab3 0%, #4895ef 100%);
+    position: relative;
+}
+
+.pagina-heros > .pagina-hero-overlays {
+    background-attachment: scroll;
+    background-image: url("/images/branding/BG-Elements-White.svg");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.pagina-heros .pagina-hero-overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.pagina-heros h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Portfolio */
+
+.portfolio-cases-info {
+    background-color: #f7f7f7;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.portfolio-cases-info h2 {
+    margin-bottom: 16px;
+}
+
+/* Repsonsive - Tablet */
+@media screen and (max-width: 1345px) and (min-width: 1025px) and (orientation: landscape) {
+    .container {
+        max-width: 100vw;
+    }
+
+    section.cases {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .container {
+        max-width: 100vw;
+    }
+
+    nav.header-nav {
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        width: 40%;
+    }
+
+    header a {
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .home-hero {
+        background-position: 25% 20%;
+    }
+
+    .over-mij, .mijn-werkwijze {
+        padding: 50px 20px;
+    }
+
+    .over-mij .container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .over-mij .col-50 {
+        width: 100%;
+    }
+
+    img.over-mij-afb {
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .home-banner h3 {
+        font-size: 45px;
+    }
+
+    .cases-info {
+        padding: 50px 20px 70px 20px;
+    }
+
+    section.cases {
+        padding: 0 20px 0 20px;
+    }
+    
+    .cases-preview-image .cases-background-overlay, img.cases-afb, .cases-preview-image {
+        height: 150px;
+    }
+
+    .cases-button {
+        padding-bottom: 50px;
+    }
+
+    .footer-info .container {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .col-80, .col-20 {
+        flex-basis: calc(100%);
+    }
+
+    .footer-info h2 {
+        font-size: 45px;
+    }
+}
+
+/* Repsonsive - Mobiel */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+    .container {
+        max-width: 100vw;
+    }
+
+    header {
+        padding: 20px 0 20px 0;
+    }
+
+    nav.header-nav {
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        width: 50%;
+    }
+
+    header a {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    li.menu-links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+
+    a.menu-title-text, a.menu-title-text#current {
+        color: white;
+        background-color: #2F2F2F;
+        padding: 10px;
+        border: 1px solid #434343;
+    }
+
+    a.menu-title-text:hover, a.menu-title-text#current:hover {
+        background-color: #670ab3;
+        border: 1px solid white;
+    }
+
+    a.menu-title-text:nth-child(2) {
+        margin: 0;
+    }
+
+    header .social-media-buttons {
+        margin-left: 20px;
+    }
+
+    header .contact-button {
+        margin: 0 20px 0 0 ;
+    }
+
+    .home-hero {
+        background-position: bottom left;
+    }
+
+    .home-hero h1 {
+        font-size: 45px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .over-mij, .mijn-werkwijze {
+        padding: 50px 20px;
+    }
+
+    .over-mij .container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .mijn-werkwijze-articles, .container .cases-articles {
+        flex-wrap: wrap;
+    }
+
+    .col-33, .cases-articles .col-33 {
+        flex-basis: calc(100%);
+    }
+
+    .home-banner {
+        padding: 20px;
+    }
+
+    .home-banner h3 {
+        font-size: 35px;
+    }
+
+    .home-banner > .banner-background-overlay {
+        background-size: 55% auto;
+        opacity: 0.05;
+    }
+
+    .cases-info {
+        padding: 50px 20px 70px 20px;
+    }
+
+    section.cases {
+        padding: 0 20px 0 20px;
+    }
+
+    .cases-info h2 {
+        font-size: 28px;
+    }
+
+    .cases-button {
+        padding-bottom: 50px;
+    }
+
+    .footer-info .container {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .col-80, .col-20 {
+        flex-basis: calc(100%);
+    }
+
+    .footer-info h2 {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+
 }

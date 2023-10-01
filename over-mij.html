@@ -4,50 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/svg" href="/images/branding/EG-Favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xyi4lka.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Over mij - Esmae Grapendaal</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="over-mij.html">Over mij</a></li>
-                <li class="contact-button"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <section class="container">
+            <nav class="header-nav">
+                <a href="/">
+                    <img width="192" src="images/branding/EsmaeGrapendaal-Logo.svg" class="header-logo" alt="Esmae Grapendaal">
+                </a>
+                <ul>
+                    <li class="menu-links">
+                        <a href="index.html" class="menu-title-text">Home</a>
+                        <a href="portfolio.html" class="menu-title-text">Portfolio</a>
+                        <a href="over-mij.html" class="menu-title-text" id="current">Over mij</a>
+                    </li>
+                    <li class="social-media-buttons">
+                        <a href="https://www.linkedin.com/in/esmaegrapendaal/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/esmaegrapendaal/" target="_blank" rel="noopener"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li class="contact-button">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
 <main>
-    <section>
-        <h1>Over mij</h1>
+    <section class="pagina-heros">
+        <section class="pagina-hero-overlays"></section>
+        <section class="container">
+            <h1>Over mij</h1>
+        </section>
     </section>
-    <section>
-        <img src="images/Esmae.jpg" alt="Esmae Grapendaal" width="500">
-        <h2>Wie is Esmae Grapendaal?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-    <section>
-        <h2>Volg mij op social media!</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/esmaegrapendaal/">/EsmaeGrapendaal</a></li>
-        <li><a href="https://www.behance.net/esmaegrapendaal">/EsmaeGrapendaal</a></li>
-        <li>Coming Soon!</li>
-        <li>Coming Soon!</li>
-    </ul>
+    <section class="over-mij">
+        <section class="container">
+            <section class="col-50">
+                <img src="images/branding/Esmae.jpg" alt="Esmae Grapendaal" class="over-mij-afb">
+            </section>
+            <section class="col-50">
+                <h2>Wie is Esmae Grapendaal?</h2>
+                <p>Hallo, mijn naam is Esmae Grapendaal. Wil je een website of bijvoorbeeld een logo of poster laten maken en ben je op zoek naar de beste kwaliteit, service en een mooi eindresultaat? Met mijn werk en ervaring op het gebied van webdesign en grafisch ontwerpen, combineer ik de kennis en ervaring met de laatste trends en ontwikkelingen om jou te helpen. Neem gerust contact met mij op, om de mogelijkheden te bespreken.</p>
+            </section>
+        </section>
     </section>
 </main>
 <footer>
-    <h3>Meer informatie of vragen?<br>Neem contact op met mij!</h3>
-    <h4>Social Media</h4>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/esmaegrapendaal/">/EsmaeGrapendaal</a></li>
-        <li><a href="https://www.behance.net/esmaegrapendaal">/EsmaeGrapendaal</a></li>
-        <li>Coming Soon!</li>
-        <li>Coming Soon!</li>
-    </ul>
-    <p>Copyright © 2023 Esmae Grapendaal | Alle rechten voorbehouden</p>
+    <section class="footer-info">
+        <section class="footer-background-overlay"></section>
+        <section class= "container">
+            <section class="col-80">
+                <h2>Meer informatie of vragen?<br>Neem contact op met mij!</h2>
+                <a href="contact.html" class="contact-button">Contact</a>
+            </section>
+            <section class="col-20">
+                <h4>Social Media</h4>
+                <ul class="footer-social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/esmaegrapendaal/" target="_blank" rel="noopener">
+                            <i aria-hidden="true" class="fab fa-linkedin-in"></i>
+                            <p class="icon-list-tekst">/EsmaeGrapendaal</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/esmaegrapendaal/" target="_blank" rel="noopener">
+                            <i aria-hidden="true" class="fab fa-behance"></i>
+                            <p class="icon-list-tekst">/EsmaeGrapendaal</p>
+                        </a>
+                    </li>
+                    <li class="social-coming-soon">
+                        <i aria-hidden="true" class="fab fa-instagram"></i>
+                        <p>Coming Soon!</p>
+                    </li>
+                    <li class="social-coming-soon">
+                        <i aria-hidden="true" class="far fa-envelope"></i>
+                        <p>Coming Soon!</p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <section class="copyright">
+        <section class= "container">
+            <p>Copyright © 2023 Esmae Grapendaal | Alle rechten voorbehouden</p>
+        </section>
+    </section>
 </footer>
 </body>
 </html>
