@@ -1,17 +1,18 @@
 /* Algemeen */
+@import url("https://use.typekit.net/xyi4lka.css");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: 'source-sans-pro', sans-serif;
 }
 
 i {
     font-style: normal;
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
+a {
     cursor: pointer;
     text-decoration: inherit;
 }
@@ -30,9 +31,6 @@ a:-webkit-any-link {
 /* Headings */
 h1 {
     font-weight: 700;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
     line-height: 1.1em;
     color: #2F2F2F;
 }
@@ -40,9 +38,6 @@ h1 {
 h2 {
     font-size: 38px;
     font-weight: 700;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
     line-height: 1.1em;
     color: #2F2F2F;
 }
@@ -50,9 +45,6 @@ h2 {
 h3 {
     font-size: 26px;
     font-weight: 700;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
     line-height: 1.1em;
     color: #2F2F2F;
 }
@@ -60,9 +52,6 @@ h3 {
 h4 {
     font-size: 24px;
     font-weight: 700;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
     line-height: 1.1em;
     color: #2F2F2F;
 }
@@ -70,9 +59,6 @@ h4 {
 p {
     font-size: 16px;
     font-weight: 400;
-    text-transform: none;
-    font-style: normal;
-    text-decoration: none;
     line-height: 1.8em;
     color: #2F2F2F;
     margin-top: 0;
@@ -147,10 +133,9 @@ header {
     padding: 20px;
 }
 
-nav.header-nav {
+header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 nav ul {
@@ -166,11 +151,11 @@ li {
     line-height: normal;
 }
 
-.header-logo {
+header img {
     vertical-align: middle;
 }
 
-a.menu-title-text {
+.menu-links a {
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
@@ -178,15 +163,15 @@ a.menu-title-text {
     transition: all .3s ease;
 }
 
-a.menu-title-text#current {
+.menu-links a#current {
     color: #670ab3;
 }
 
-a.menu-title-text:hover {
+.menu-links a:hover {
     color: #4895ef;
 }
 
-a.menu-title-text:nth-child(2) {
+.menu-links a:nth-child(2) {
     margin: 0 20px 0 20px;
 }
 
@@ -371,14 +356,14 @@ li.social-coming-soon p {
     justify-content: center;
     align-items: flex-start;
     padding: 0px 20px 0px 20px;
-    background-image: url("/images/branding/Home-Hero-Elements.svg");
+    background-image: url("../images/branding/hero.svg");
     background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
 }
 
-.subtitel-hero {
+.home-hero span{
     color: #FFFFFFCC;
     font-size: 17px;
     font-weight: 700;
@@ -647,7 +632,7 @@ img.cases-afb {
     margin-bottom: 16px;
 }
 
-/* Repsonsive - Tablet */
+/* Repsonsive - Tablet
 @media screen and (max-width: 1345px) and (min-width: 1025px) and (orientation: landscape) {
     .container {
         max-width: 100vw;
@@ -663,11 +648,11 @@ img.cases-afb {
         max-width: 100vw;
     }
 
-    nav.header-nav {
+    header nav {
         flex-wrap: wrap;
     }
 
-    .header-logo {
+    header img {
         width: 40%;
     }
 
@@ -737,7 +722,7 @@ img.cases-afb {
     }
 }
 
-/* Repsonsive - Mobiel */
+Repsonsive - Mobiel
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
     .container {
         max-width: 100vw;
@@ -747,11 +732,11 @@ img.cases-afb {
         padding: 20px 0 20px 0;
     }
 
-    nav.header-nav {
+    header nav {
         flex-wrap: wrap;
     }
 
-    .header-logo {
+    header img {
         width: 50%;
     }
 
@@ -772,7 +757,7 @@ img.cases-afb {
         margin: 20px 0 20px 0;
     }
 
-    a.menu-title-text, a.menu-title-text#current {
+    .menu-links a, a.menu-title-text#current {
         color: white;
         background-color: #2F2F2F;
         padding: 10px;
@@ -871,4 +856,4 @@ img.cases-afb {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 
-}
+} */
