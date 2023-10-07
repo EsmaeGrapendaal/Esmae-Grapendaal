@@ -12,3 +12,4 @@ BRONVERMELDING
 3. https://fontawesome.com/icons (voor icons)
 4. https://cdnjs.com/libraries/font-awesome (voor het gebruik van de Font Awesome icons)
 5. https://fonts.adobe.com/fonts/ & https://fonts.cdnfonts.com/css/poppins (voor mijn gekozen fonts)
+6. Alle content komt van mijn eigen website die ik ook zelf heb gebouwd, maar dan met WordPress/Elementor
