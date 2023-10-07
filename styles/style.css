@@ -75,25 +75,25 @@ p {
 
 /* Buttons */
 .button-1, .button-2 {
+    display: inline-flex;
     color: white;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 1em;
+    padding: 15px 30px;
+    border-radius: 100px;
+    transition: all .3s ease;
 }
 
 .button-1 {
-    display: inline-flex;
-    font-size: 18px;
-    font-weight: 700;
     background-color: #4895ef;
-    padding: 15px 30px 15px 30px;
-    border-radius: 100px;
-    transition: all .3s ease;
 }
 
 .button-1:hover {
     background-color: #3288ed;
 }
 
-.button-1:after {
+.button-1:after, .button-2:after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f178";
@@ -101,27 +101,14 @@ p {
 }
 
 .button-2 {
-    display: inline-flex;
-    font-size: 18px;
-    font-weight: 700;
     background-color: transparent;
     background-image: linear-gradient(145deg, #670ab3 0%, #4895ef 100%);
-    padding: 15px 30px 15px 30px;
-    border-radius: 100px;
-    transition: all .3s ease;
     transition-property: transform;
 }
 
 .button-2:hover {
     background-image: linear-gradient(145deg, #4895ef 0%, #670ab3 100%);
     transform: scale(1.1);
-}
-
-.button-2:after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f178";
-    margin-left: 10px;
 }
 
 .contact-button {
@@ -132,9 +119,8 @@ p {
     text-transform: uppercase;
     line-height: 1em;
     background-color: #4895ef;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px;
     border-radius: 100px;
-    margin-left: 10px;
     transition: all .3s ease;
 }
 
@@ -179,8 +165,8 @@ p {
     color: white;
 }
 
-.social-media-buttons i.fab.fa-linkedin-in {
-    margin-right: 10px;
+.social-media-buttons i.fab.fa-behance {
+    margin: 0 10px;
 }
 
 /* Header */
@@ -195,17 +181,21 @@ header {
 
 header .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
 }
 
 header img {
     vertical-align: middle;
+    height: 50px;
+    width: auto;
 }
 
 header li a {
@@ -225,7 +215,7 @@ header li a:hover, header li a#current:hover {
 }
 
 header li:nth-child(2) {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
 }
 
 header li:nth-child(3) {
@@ -252,13 +242,11 @@ header li:nth-child(3) {
 }
 
 .footer-info > .footer-background-overlay {
-    background-attachment: scroll;
     background-image: url("../images/branding/BG-Elements-White.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.025;
-    pointer-events: none;
 }
 
 .footer-info .footer-background-overlay {
@@ -272,18 +260,15 @@ header li:nth-child(3) {
 
 .footer-info .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-80 {
-    flex-basis: 80%;
+    width: 80%;
 }
 
 .col-20 {
-    flex-basis: 20%;
-}
-
-.col-80 a.contact-button {
-    margin: 0;
+    width: 20%;
 }
 
 .col-20 h4 {
@@ -312,21 +297,17 @@ header li:nth-child(3) {
     color: white;
 }
 
-li.social-coming-soon {
+.social-coming-soon {
     display: flex;
     align-items: center;
 }
 
-li.social-coming-soon p {
+.social-coming-soon p {
     font-style: italic;
 }
 
-.footer-social-links li {
+.footer-social-links li:not(:last-child) {
     margin-bottom: 10px;
-}
-
-.footer-social-links li:last-child {
-    margin-bottom: 0;
 }
 
 .copyright {
@@ -405,13 +386,11 @@ li.social-coming-soon p {
 }
 
 .home-banner > .banner-background-overlay {
-    background-attachment: scroll;
     background-image: url("../images/branding/Overlay-EG-Icon.svg");
     background-position: center center;
     background-repeat: repeat;
     background-size: 50%;
     opacity: .1;
-    pointer-events: none;
 }
 
 .home-banner .banner-background-overlay {
@@ -441,13 +420,12 @@ li.social-coming-soon p {
 }
 
 .mijn-werkwijze-articles {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .mijn-werkwijze-articles article {
-    flex-basis: 33%;
     padding: 25px;
     border-radius: 10px;
     background-color: #670ab3;
@@ -499,17 +477,12 @@ li.social-coming-soon p {
 }
 
 .cases-articles {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.cases-articles:first-of-type {
-    margin-bottom: 20px;
-}
-
 .cases-articles article {
-    flex-basis: 33%;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -562,8 +535,7 @@ li.social-coming-soon p {
 .cases-button {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin: 30px 0 100px 0;
 }
 
 /*  Pagina heros */
@@ -579,13 +551,11 @@ li.social-coming-soon p {
 }
 
 .pagina-heros > .pagina-hero-overlays {
-    background-attachment: scroll;
     background-image: url("../images/branding/BG-Elements-White.svg");
     background-position: 50% 60%;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.05;
-    pointer-events: none;
 }
 
 .pagina-heros .pagina-hero-overlays {
@@ -630,13 +600,13 @@ li.social-coming-soon p {
 
 .case-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 20px;
 }
 
 .case-gallery img {
     width: 100%;
-    height: 250px;
+    height: auto;
     object-fit: cover;
     background-position: center center;
     border-radius: 10px;
@@ -644,25 +614,59 @@ li.social-coming-soon p {
 }
 
 /* Repsonsive - Tablet */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* @media (min-width: 768px) and (max-width: 1024px) */
+@media (max-width: 1024px) {
     .container {
         max-width: 100vw;
     }
 
-    .over-mij, .mijn-werkwijze {
-        padding: 50px 20px;
+    header .social-media-buttons {
+    display: none;
+    }
+
+    header li:nth-child(3) {
+        margin-right: 20px;
+    }
+
+    .home-hero {
+        background-position: 0;
+    }
+
+    .home-hero h1, .footer-info h2 {
+        font-size: 45px;
     }
 
     .over-mij .container {
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
-    .cases-info {
+    .over-mij, .mijn-werkwijze, .case {
+        padding: 50px 20px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .home-banner h3 {
+        font-size: 55px;
+    }
+    .mijn-werkwijze-articles {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .cases-info, .portfolio-cases-info {
         padding: 50px 20px 80px 20px;
     }
 
     .cases {
-        padding: 0 20px 0 20px;
+        padding: 0 20px;
+    }
+
+    .cases-articles {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cases-preview-image, .cases-preview-image .cases-background-overlay, .cases-preview-image img  {
@@ -673,130 +677,98 @@ li.social-coming-soon p {
         margin-bottom: 50px;
     }
 
-    .footer-info .container {
-        display: flex;
-        flex-wrap: wrap;
+    #portfolio-cases {
+        padding-bottom: 50px;
+    }
+
+    .pagina-heros {
+        min-height: 30vh;
+    }
+
+    .pagina-heros > .pagina-hero-overlays {
+        background-position: 50% 70%;
     }
 
     .col-80, .col-20 {
-        flex-basis: 100%;
+        width: 100%;
     }
 
-    .col-20 {
-        margin-top: 50px;
-    }
-
-    .footer-social-links li {
-        margin-bottom: 0;
+    .col-80 {
+        margin-bottom: 50px;
     }
 
     .footer-social-links {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    .footer-social-links li {
+        margin-bottom: 0 !important;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (max-width: 1024px) and (orientation: landscape) {
+    header .social-media-buttons {
+        display: inherit;
+    }
+}
+
+/* Repsonsive - Mobiel */
+@media (max-width: 767px) {
     .container {
         max-width: 100vw;
     }
 
+    h2 {
+        font-size: 34px;
+    }
+
     header .container {
-        display: flex;
         justify-content: center;
-        flex-wrap: wrap;
     }
 
-    header nav {
-        margin-top: 20px;
+    header li:nth-child(3) {
+        margin-right: 0;
     }
 
-    .home-hero {
-        background-position: 0;
-        background-size: 125%;
+    header img {
+        margin-bottom: 20px;
     }
 
-    .over-mij .container {
-        flex-direction: column-reverse;
-        gap: 20px;
+    header .contact-button {
+        display: none;
     }
 
-    .col-50 {
-        width: 100%;
+    .home-banner {
+        padding: 30px 20px;
+    }
+
+    .home-banner > .banner-background-overlay {
+        background-size: 55% auto;
     }
 
     .home-banner h3 {
         font-size: 45px;
     }
 
-    .cases {
-        padding: 0 20px;
+    .cases-articles, .case-gallery {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .cases-articles {
-        flex-direction: column;
-    }
-
-    .cases-button {
-        margin-bottom: 50px;
-    }
-
-    .case-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-info .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .col-80, .col-20 {
-        flex-basis: 100%;
-    }
-
-    .col-20 {
-        margin-top: 50px;
+    .footer-info {
+        padding: 50px 20px;
     }
 
     .footer-info h2 {
-        font-size: 45px;
-    }
-
-    .footer-social-links li {
-        margin-bottom: 0;
+        font-size: 38px;
     }
 
     .footer-social-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-social-links li:not(:last-child) {
+        margin-bottom: 10px !important;
     }
 }
-
-/* Repsonsive - Mobiel */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-    .container {
-        max-width: 100vw;
-    }
-
-    header {
-        padding: 20px 0 20px 0;
-    }
-
-    header nav {
-        flex-wrap: wrap;
-    }
-
-    header img {
-        width: 50%;
-    }
-
-    header a {
-        text-align: center;
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
-
-} */
